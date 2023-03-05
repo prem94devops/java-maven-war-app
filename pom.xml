@@ -31,19 +31,19 @@
 	</build>
  <repositories>
     <repository>
-      <id>FIRST_MAVEN-group</id>
-      <url>http://18.180.156.49:8081/repository/FIRST_MAVEN-group/</url>
+      <id>java-maven-war-app-group</id>
+      <url>http://18.180.156.49:8081/repository/java-maven-war-app-group/</url>
     </repository>
   </repositories>
 
     <distributionManagement>
     <snapshotRepository>
-      <id>FIRST_MAVEN-snapshot</id>
-      <url>http://18.180.156.49:8081/repository/FIRST_MAVEN-snapshot/</url>
+      <id>java-maven-war-app-snapshot</id>
+      <url>http://18.180.156.49:8081/repository/java-maven-war-app-snapshot/</url>
     </snapshotRepository>
     <repository>
-      <id>FIRST_MAVEN-release</id>
-      <url>http://18.180.156.49:8081/repository/FIRST_MAVEN-release/</url>
+      <id>java-maven-war-app-release</id>
+      <url>http://18.180.156.49:8081/repository/java-maven-war-app-release/</url>
     </repository>
   </distributionManagement>
 </project>
