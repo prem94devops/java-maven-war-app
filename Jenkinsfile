@@ -15,7 +15,7 @@ pipeline{
 
         stage('maven-build'){
             steps{
-                sh 'mvn clean install'
+                sh 'mvn clean install -Denv.BUILD_NUMBER=${BUILD_NUMBER}'
             }
         }
 
@@ -33,18 +33,18 @@ pipeline{
 
         stage('nexus-upload'){
             steps{
-                sh 'mvn -s settings.xml deploy'
+                sh 'mvn -s settings.xml deploy -Denv.BUILD_NUMBER=${BUILD_NUMBER}'
             }
         }
 
-        stage("deployment"){
+       /* stage("deployment"){
             agent{
                 label 'Ansible_Agent'
             }
             steps{
                 sh 'ansible-playbook -i inventory.yml deployment_playbook.yml -e "build_number=${BUILD_NUMBER}"'                
             }
-        }
+        }*/
     }
 
 }
