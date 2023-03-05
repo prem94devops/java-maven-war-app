@@ -5,16 +5,24 @@
 
   <servers>
     <server>
-      <id>java-maven-app-snapshots</id>
+      <id>FIRST_MAVEN-snapshot</id>
       <username>admin</username>
       <password>0280719930</password>
     </server>
     <server>
-      <id>java-maven-app-releases</id>
+      <id>FIRST_MAVEN-release</id>
       <username>admin</username>
       <password>0280719930</password>
     </server>
   </servers>
 
+  <mirrors>
+      <mirror>
+        <id>central</id>
+        <name>central</name>
+        <url>http://18.180.156.49:8081/repository/FIRST_MAVEN-central/</url>
+        <mirrorOf>*</mirrorOf>
+      </mirror>
+   </mirrors>
 
 </settings>
