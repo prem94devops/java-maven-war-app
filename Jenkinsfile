@@ -15,7 +15,7 @@ pipeline{
 
         stage('maven-build'){
             steps{
-                sh 'mvn clean install'
+                sh 'mvn clean install build_number=${BUILD_NUMBER}'
             }
         }
 
